@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Calculo Media Idades Familia</title>
+   Quantidade de parentes <input id="quant_parentes" type="number"> <br />
+   Idade Pai <input id="idade_Pai" type="number"> <br />
+   Idade Mãe <input id="idade_Mae" type="number"> <br />
+   Idade Filho(a) <input id="idade_filha" type="number"> <br />
+   <button onclick="media_idade_familia()">Calcular Media</button>
+
+   <script type="text/javascript">
+
+    function media_idade_familia(){
+     var idade_Pai = parseFloat(document.getElementById("idade_Pai").value);
+     var idade_Mae = parseFloat(document.getElementById("idade_Mae").value);
+     var idade_filha = parseFloat(document.getElementById("idade_filha").value);
+     var quant_parentes = parseFloat(document.getElementById("quant_parentes").value);
+
+     var media_idade_familia =  (idade_Pai + idade_Mae + idade_filha)/quant_parentes;
+
+    
+       alert(media_idade_familia);
+
+    }
+ </script>
+
+ </head>
+</html>
